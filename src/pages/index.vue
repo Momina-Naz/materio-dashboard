@@ -288,7 +288,7 @@
               show-adjacent-months
               style="font-size: 12px"
               color="deep-purple-lighten-1"
-              class="mx-8"
+              class="ms-4"
             ></v-date-picker>
           </v-col>
         </v-row>
