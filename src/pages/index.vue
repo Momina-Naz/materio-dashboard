@@ -23,7 +23,7 @@
       <v-row>
         <!-- first -->
         <v-col cols="12" md="6">
-          <v-card class="mx-auto pa-3 py-5 rounded-lg">
+          <v-card class="mx-auto pa-3 pb-8 rounded-lg">
             <template v-slot:prepend>
               <v-icon
                 color="deep-purple-lighten-1"

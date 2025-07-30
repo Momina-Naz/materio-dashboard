@@ -124,7 +124,7 @@ const links = [
   {
     icon: "mdi-view-dashboard-outline",
     text: "Main Dashboard",
-    route: "/dashboard",
+    route: "/",
   },
   { icon: "mdi-store-outline", text: "MarketPlace", route: "/marketplace" },
   { icon: "mdi-table", text: "Data Tables", route: "/datatables" },
@@ -138,14 +138,14 @@ const toggleDrawer = () => {
 
 //  Route-to-Title Mapping
 const routeTitles = {
-  "/dashboard": "Main Dashboard",
+  "/": "Main Dashboard",
   "/marketplace": "MarketPlace",
   "/datatables": "Data Tables",
   "/profile": "Profile",
   "/signin": "",
 };
 const filepaths = {
-  "/dashboard": "Pages/dashboard",
+  "/": "Pages/dashboard",
   "/marketplace": "Pages/marketplace",
   "/datatables": "Pages/datatables",
   "/profile": "Pages/profile",

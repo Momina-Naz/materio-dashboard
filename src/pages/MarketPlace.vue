@@ -31,7 +31,7 @@
         <v-col cols="12" sm="6" md="6">
           <v-card class="mx-auto pa-2 rounded-xl" elevation="0">
             <template v-slot:prepend>
-              <v-card-title class="font-weight-bold text-h5">
+              <v-card-title class="font-weight-bold text-h5 mt-1">
                 Top Creators</v-card-title
               >
             </template>
@@ -81,7 +81,7 @@
           class="rounded-xl mb-8 mt-3"
           style="background: white"
         >
-          <h2 class="text-h5 font-weight-bold mb-4 mt-2">Trending NFTs</h2>
+          <h2 class="text-h5 font-weight-bold mb-4 mt-4">Trending NFTs</h2>
 
           <v-row class="mt-10">
             <v-col
@@ -184,10 +184,10 @@
         >
           <v-row>
             <v-col cols="12">
-              <h2 class="text-h5 font-weight-bold mb-4">Recently Added</h2>
+              <h2 class="text-h5 font-weight-bold mb-4 mt-4">Recently Added</h2>
             </v-col>
           </v-row>
-          <v-row class="mb-6">
+          <v-row class="mb-6 mt-6">
             <v-col
               cols="12"
               sm="4"

@@ -116,10 +116,10 @@
 <script setup>
 import { ref } from "vue";
 import { useField, useForm } from "vee-validate";
-import { useRoute, useRouter } from "vue-router"; // ✅ import useRouter
+import { useRoute, useRouter } from "vue-router";
 
 const route = useRoute();
-const router = useRouter(); // ✅ initialize router
+const router = useRouter();
 
 const { handleSubmit, handleReset } = useForm({
   validationSchema: {
@@ -144,6 +144,6 @@ const password = useField("password");
 const checkbox = useField("checkbox");
 
 const handleClick = () => {
-  router.push("/dashboard"); // ✅ navigate to home page or your desired route
+  router.push("/");
 };
 </script>
