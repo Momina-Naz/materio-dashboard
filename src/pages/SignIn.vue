@@ -7,33 +7,16 @@
           <!-- back to home button -->
           <v-btn
             @click="handleClick"
-            color="deep-purple-lighten-2 text-body-1"
+            color="deep-purple-darken-2 text-body-1"
             variant="plain"
           >
             <v-icon> mdi-arrow-left </v-icon>
             Back to Main</v-btn
           >
           <v-card-title class="text-h4 font-weight-bold">Sign In</v-card-title>
-          <v-card-subtitle>
+          <v-card-subtitle class="py-4">
             Enter your email and password to sign in!
           </v-card-subtitle>
-
-          <!-- Sign in with Google -->
-          <v-btn
-            block
-            elevation="0"
-            color="grey-lighten-2"
-            rounded
-            class="text-body-1 text-caption font-weight-light text-black rounded-pill mt-4 py-2"
-          >
-            <v-icon class="me-2">mdi-google</v-icon>
-            Sign In with Google
-          </v-btn>
-
-          <!-- Divider -->
-          <v-divider class="my-5">
-            <span class="text-grey-lighten-1">or</span>
-          </v-divider>
 
           <!-- Sign In Form -->
           <form @submit.prevent="submit">
@@ -43,7 +26,7 @@
               label="E-mail"
               variant="outlined"
               color="grey-lighten-1"
-              class="mb-4"
+              class="mb-2"
             />
             <v-text-field
               v-model="password.value.value"
@@ -133,8 +116,8 @@ const { handleSubmit, handleReset } = useForm({
       return true;
     },
     checkbox(value) {
-      if (value === "1") return true;
-      return "Must be checked.";
+      if (value === "0") return true;
+      return "";
     },
   },
 });
