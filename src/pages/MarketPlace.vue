@@ -322,21 +322,21 @@ const historyItems = [
     creator: "Peter Will",
     price: "0.91 ETH",
     time: "30s ago",
-    image: "/public/img3.png",
+    image: "/img3.png",
   },
   {
     title: "3D Cubes Art",
     creator: "Manny Gates",
     price: "0.91 ETH",
     time: "1m ago",
-    image: "/public/img2.png",
+    image: "/img2.png",
   },
   {
     title: "3D Cubes Art",
     creator: "Manny Gates",
     price: "0.91 ETH",
     time: "1m ago",
-    image: "/public/img1.png",
+    image: "/img1.png",
   },
 ];
 </script>
