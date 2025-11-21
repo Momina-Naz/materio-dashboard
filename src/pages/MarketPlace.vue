@@ -279,19 +279,19 @@ const nftCards = [
     title: "Aet Colors",
     creator: "Peter Will",
     price: "0.91 ETH",
-    image: "/public/img1.png",
+    image: "/img1.png",
   },
   {
     title: "ETH AI Brain",
     creator: "Mark Benjamin",
     price: "0.91 ETH",
-    image: "/public/img2.png",
+    image: "/img2.png",
   },
   {
     title: "Mesh Grad",
     creator: "Manny Gates",
     price: "0.91 ETH",
-    image: "/public/img3.png",
+    image: "/img3.png",
   },
 ];
 
@@ -301,21 +301,21 @@ const historyItems = [
     creator: "Mark Benjamin",
     price: "0.91 ETH",
     time: "30s ago",
-    image: "/public/img3.png",
+    image: "/img3.png",
   },
   {
     title: "Abstract Colors",
     creator: "Esthera Jackson",
     price: "0.91 ETH",
     time: "58s ago",
-    image: "/public/img2.png",
+    image: "/img2.png",
   },
   {
     title: "ETH AIii Brain",
     creator: "Nickim Wilson",
     price: "0.91 ETH",
     time: "1m ago",
-    image: "/public/img1.png",
+    image: "/img1.png",
   },
   {
     title: "Swipe Circles",
