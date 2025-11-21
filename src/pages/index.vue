@@ -1,7 +1,7 @@
 <template>
   <v-app style="background: #f6f8fb">
     <v-container>
-      <v-row justify="center" c>
+      <v-row justify="center">
         <v-col cols="12" sm="6" md="4" v-for="item in data" :key="item.id">
           <v-card class="pa-4 d-flex align-center py-8" rounded="xl">
             <!-- Avatar on the left -->
@@ -209,13 +209,13 @@
       </v-row>
       <!-- Last section of  data tables -->
       <v-row class="mb-5">
-        <!-- First -->
+        <!-- Complex Table -->
         <v-col cols="12" sm="12" md="6">
           <v-card class="mx-auto pa-2 rounded-lg">
             <template v-slot:prepend>
               <v-card-title class="font-weight-bold text-h5">
-                Complex Table</v-card-title
-              >
+                Complex Table
+              </v-card-title>
             </template>
             <template v-slot:append>
               <v-icon
@@ -224,6 +224,7 @@
                 size="30"
               ></v-icon>
             </template>
+
             <v-data-table
               :headers="complexheaders"
               v-model="selected"
@@ -239,59 +240,22 @@
                 ></v-progress-linear>
               </template>
               <template #item.status="{ item }">
-                <v-icon size="22" class="me-2" color="deep-purple-lighten-1"
-                  >mdi-check-circle-outline</v-icon
-                >
+                <v-icon size="22" class="me-2" color="deep-purple-lighten-1">
+                  mdi-check-circle-outline
+                </v-icon>
                 <span>{{ item.status }}</span>
-              </template></v-data-table
-            >
+              </template>
+            </v-data-table>
           </v-card>
         </v-col>
-        <!-- second  -->
-        <v-row class="mt-0">
-          <v-col cols="12" md="5">
-            <v-card class="mx-auto">
-              <!-- list -->
-              <v-list
-                v-model:selected="settingsSelection"
-                selectable
-                multiple
-                density="compact"
-              >
-                <v-list-subheader class="text-h6 font-weight-bold" color="black"
-                  >Tasks</v-list-subheader
-                >
 
-                <v-list-item
-                  v-for="(item, i) in listItems"
-                  :key="i"
-                  :value="item"
-                  color="deep-purple-darken-2"
-                >
-                  <template v-slot:prepend="{ isSelected, select }">
-                    <v-list-item-action start>
-                      <v-checkbox-btn
-                        :model-value="isSelected"
-                        @update:model-value="select"
-                      ></v-checkbox-btn>
-                    </v-list-item-action>
-                  </template>
-
-                  <v-list-item-title>{{ item.text }}</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </v-card>
-          </v-col>
-          <!-- calender -->
-          <v-col cols="12" sm="6" md="7">
-            <v-date-picker
-              show-adjacent-months
-              style="font-size: 12px"
-              color="deep-purple-lighten-1"
-              class="ms-4"
-            ></v-date-picker>
-          </v-col>
-        </v-row>
+        <!-- Calendar -->
+        <v-col cols="12" sm="12" md="6">
+          <v-date-picker
+            show-adjacent-months
+            color="deep-purple-lighten-1"
+          ></v-date-picker>
+        </v-col>
       </v-row>
     </v-container>
   </v-app>

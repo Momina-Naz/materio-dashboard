@@ -22,8 +22,6 @@
               >
                 Discover Now
               </v-btn>
-
-              <v-btn class="rounded-xl px-4" elevation="0">Watch Video</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -281,19 +279,19 @@ const nftCards = [
     title: "Aet Colors",
     creator: "Peter Will",
     price: "0.91 ETH",
-    image: "public/img1.png",
+    image: "/public/img1.png",
   },
   {
     title: "ETH AI Brain",
     creator: "Mark Benjamin",
     price: "0.91 ETH",
-    image: "public/img2.png",
+    image: "/public/img2.png",
   },
   {
     title: "Mesh Grad",
     creator: "Manny Gates",
     price: "0.91 ETH",
-    image: "public/img3.png",
+    image: "/public/img3.png",
   },
 ];
 
@@ -303,42 +301,42 @@ const historyItems = [
     creator: "Mark Benjamin",
     price: "0.91 ETH",
     time: "30s ago",
-    image: "public/img3.png",
+    image: "/public/img3.png",
   },
   {
     title: "Abstract Colors",
     creator: "Esthera Jackson",
     price: "0.91 ETH",
     time: "58s ago",
-    image: "public/img2.png",
+    image: "/public/img2.png",
   },
   {
     title: "ETH AIii Brain",
     creator: "Nickim Wilson",
     price: "0.91 ETH",
     time: "1m ago",
-    image: "public/img1.png",
+    image: "/public/img1.png",
   },
   {
     title: "Swipe Circles",
     creator: "Peter Will",
     price: "0.91 ETH",
     time: "30s ago",
-    image: "public/img3.png",
+    image: "/public/img3.png",
   },
   {
     title: "3D Cubes Art",
     creator: "Manny Gates",
     price: "0.91 ETH",
     time: "1m ago",
-    image: "public/img2.png",
+    image: "/public/img2.png",
   },
   {
     title: "3D Cubes Art",
     creator: "Manny Gates",
     price: "0.91 ETH",
     time: "1m ago",
-    image: "public/img1.png",
+    image: "/public/img1.png",
   },
 ];
 </script>
